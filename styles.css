@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Sets a black border property so you can see the container element  */
+section.container, div.container { /* element and class selectors to select sections and divs with a container class*/
+    border: 5px solid black;
+}
+
+/* Sets a lightgreen border property so you can see the row elements  */
+div.row {
+    border: 5px solid lightgreen;
+}
+
+/* Sets a red border property so you can see the column element  */
+div[class^="col-"] { /* this is a special selector that selects a div element which has a call starting with 'col' */
+    border: 5px solid red;
+}
+
+/* Overrides the bootstrap display-4 class */
+.display-4 {
+    font-size: 80px;
+    font-weight: 800;
+} 
+
+/* A CSS class which can be reused to add a black background and white text property to an element */
+.black-background {
+    background-color: #000000; /* using a hex colour code for the background */
+    color: #FFFFFF; /* using a hex colour code for the text */
+}
+
+/* A CSS class which can be reused to make text inside an element white */
+.white-text {
+    color: #FFFFFF;
+}
+
+/* A CSS class which adds a margin underneath an element */
+.section-gap {
+    margin-bottom: 20px;
+}
+
+/* An element selector for the horizontal rule element */
+hr {
+    border: 2px solid #FFFFFF; /* note: a white border means hr won't be visible on a white background */
+}
