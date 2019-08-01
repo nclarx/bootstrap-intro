@@ -1,0 +1,99 @@
+body {
+    background-color: #333333;
+}
+
+
+#sidebar-nav {
+    background-color: lightblue;
+}
+
+/* TEXT COLOUR STYLES 
+ Multi line is ok.
+*/
+
+.brown-text {
+    color: brown;
+}
+
+.center-align {
+    text-align: center;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 30px;
+    text-align: center;
+    border-top: solid 5px red;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* CSS ANIMATION SNIPPETS */
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    transform: rotate(45deg);
+    transform-origin: 32px 32px;
+}
+
+.lds-heart div {
+    top: 23px;
+    left: 19px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: #cef;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: #cef;
+}
+
+.lds-heart div:before {
+    left: -17px;
+    border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+    top: -17px;
+    border-radius: 50% 50% 0 0;
+}
+
+@keyframes lds-heart {
+    0% {
+        transform: scale(0.95);
+    }
+
+    5% {
+        transform: scale(1.1);
+    }
+
+    39% {
+        transform: scale(0.85);
+    }
+
+    45% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
